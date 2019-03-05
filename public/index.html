@@ -8,7 +8,18 @@
     <title>octotech</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135620563-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-135620563-1');
+    </script>
   </head>
   <body>
     <noscript>
@@ -16,5 +27,13 @@
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    <!-- Get minor updates and patch fixes within a major version -->
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 1000,
+      header: '[data-scroll-header]'
+    });
+  </script>
   </body>
 </html>

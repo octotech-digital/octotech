@@ -1,5 +1,7 @@
 <template>
-    <v-toolbar flat color="white" app height="100">
+    <v-toolbar flat color="white" app height="100"
+    data-scroll-header
+    >
       <v-toolbar-title class="headline text-uppercase">
         <span class="oct-title purple--text">
             <img src="../../public/logo-horizontal.png" alt="" height="50" width="auto">
@@ -8,8 +10,9 @@
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn flat color="primary" 
-        v-for="link in links" 
+        v-for="link in links"
         :key="link.text"
+        data-scroll :href="link.route"
         >
           <!-- <v-icon left>{{ link.icon }}</v-icon> -->
           <span>{{ link.text }}</span>
@@ -24,10 +27,10 @@ export default {
     data() {
       return {
         links: [
-          { icon: 'fingerprint', text: 'O que fazemos', route: '/pages/#OqueFazemos' },
-          { icon: 'favorite_border', text: 'Como fazemos', route: '/#OqueFazemos' },
-          { icon: 'devices_other', text: 'Cases', route: '/pages/#OqueFazemos' },
-          { icon: 'mail_outline', text: 'Contato', route: '/pages/#OqueFazemos' }
+          { icon: 'fingerprint', text: 'O que fazemos', route: '#OqueFazemos' },
+          { icon: 'favorite_border', text: 'Como fazemos', route: '#metodologia' },
+          { icon: 'devices_other', text: 'Cases', route: '#oct-clientes' },
+          { icon: 'mail_outline', text: 'Contato', route: '#oct-contato' }
         ]
       }
     }

@@ -4,6 +4,7 @@
   <OqueFazemos />
   <Metodologia />
   <Clientes />
+  <Contato />
 </div>
 </template>
 
@@ -13,6 +14,7 @@ import Intro from '@/components/pages/Intro'
 import OqueFazemos from '@/components/pages/OqueFazemos'
 import Metodologia from '@/components/pages/Metodologia'
 import Clientes from '@/components/pages/Clientes'
+import Contato from '@/components/pages/Contato'
 
 export default {
   name: 'App',
@@ -20,11 +22,12 @@ export default {
     Intro,
     OqueFazemos,
     Metodologia,
-    Clientes
+    Clientes,
+    Contato
   },
   data () {
     return {
-      //
+      offsetTop: 0,
     }
   }
 }
