@@ -16,6 +16,7 @@
                 <v-btn outline large 
                 color="accent"
                 class="oct-btn"
+                data-scroll href="#OqueFazemos"
                 >
                      Saiba Mais                    
                 </v-btn>
